@@ -6,10 +6,13 @@
 - Chromium 🌐
 - Vscode (and extension)
 - Python3 🐍
-- NodeJS 🟡
+- NodeJS 🟢
 
 ### CTF script 🐱‍💻:
 - Chromium 🌐
 - Ghidra 🐉
 - Wordlist 📙
 - Wireshark 🦈
+
+This program require an internet connection
+It can be launched with ```./setup.sh``` in terminal
