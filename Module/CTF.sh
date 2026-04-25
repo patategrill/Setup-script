@@ -35,7 +35,7 @@ fi
 
 
 #Wordlist(rockyou)
-if [[ "$install_wordlist" == true]];
+if [[ "$install_wordlist" == true ]];
 then
     echo "Installing wordlist (rockyou)..."
     git clone https://github.com/RykerWilder/rockyou.txt.git
