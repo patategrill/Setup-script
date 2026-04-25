@@ -4,10 +4,8 @@ source config.conf
 echo "Updating systeme..."
 sudo apt update &> /dev/null
 
-if [[ "$install_ghidra" == true ]];
-then 
-    if command -v ghidra &> /dev/null;
-    then
+if [[ "$install_ghidra" == true ]]; then 
+    if command -v ghidra &> /dev/null; then
         echo "Ghidra is already install"
     else
         echo "Installing Ghidra..."
@@ -19,16 +17,13 @@ then
     fi
 fi
 
-if [[ "$install_wordlist" == true]];
-then
+if [[ "$install_wordlist" == true ]]; then
     echo "Installing wordlist (rockyou)..."
     git clone https://github.com/RykerWilder/rockyou.txt.git
 fi
 
-if [[ "$install_wireshark" == true ]];
-then
-    if command -v wireshark &> /dev/null;
-    then
+if [[ "$install_wireshark" == true ]]; then
+    if command -v wireshark &> /dev/null; then
         echo "Wireshark is already install"
     else
         echo "Installing Wireshark..."
