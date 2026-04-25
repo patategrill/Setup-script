@@ -22,9 +22,9 @@ if [[ "$install_code" == true ]]; then
         echo "Vscode is already install"
     else
         echo "Installing Vscode..."
-        wget -O vscode.zip https://update.code.visualstudio.com/latest/linux-x64/stable
-        unzip vscode.zip -d vscode
-        rm vscode.zip
+        wget -O vscode.tar.gz https://update.code.visualstudio.com/latest/linux-x64/stable
+        tar -xzf vscode.tar.gz -d vscode
+        rm vscode.tar.gz
         cd vscode
         mkdir data
 
