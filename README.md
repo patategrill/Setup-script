@@ -22,6 +22,8 @@
 - LibreOffice 
 - Obsidian 🟣
 
+### This tool will be improved shortly 🙏  
+
 This program require an internet connection  
 It can be launched in terminal with :
 
