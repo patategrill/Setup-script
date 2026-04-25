@@ -1,4 +1,5 @@
 #!/bin/bash
+source config.conf
 
 echo "choose option :"
 echo "1) Dev"
