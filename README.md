@@ -17,6 +17,11 @@
 - SqlMap 
 - Nmap
 
+## Office Software script :
+- Chromium 🌐
+- LibreOffice 
+- Obsidian 🟣
+
 This program require an internet connection  
 It can be launched in terminal with :
 
