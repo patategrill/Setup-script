@@ -5,14 +5,14 @@ echo "Updating systeme..."
 sudo apt update &> /dev/null
 
 #chromium
-if [[ "$install_chromium" == true]];
+if [[ "$install_chromium" == true ]];
 then
     if command -v chromium &> /dev/null;
     then
         echo "Chromium is already install"
     else
         echo "Installing Chromium..."
-        sudo apt install -y chromium
+        sudo apt install -y chromium &> /dev/null
     fi
 fi
 
@@ -24,9 +24,9 @@ then
         echo "Vscode is already install"
     else
         echo "Installing Vscode..."
-        wget -O vscode.zip https://update.code.visualstudio.com/latest/linux-x64/stable
-        unzip vscode.zip -d vscode
-        rm vscode.zip
+        wget -O vscode.tar.gz https://update.code.visualstudio.com/latest/linux-x64/stable &> /dev/null;
+        tar -xzf vscode.tar.gz -d vscode &> /dev/null
+        rm vscode.tar.gz
         cd vscode
         mkdir data
 
@@ -70,7 +70,7 @@ then
 fi
 
 #NodeJS
-if [[ "$install_nodejs" == true ]]:
+if [[ "$install_nodejs" == true ]];
 then
 
     if command -v node &> /dev/null;
