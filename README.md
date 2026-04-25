@@ -14,5 +14,6 @@
 - Wordlist 📙
 - Wireshark 🦈
 
-This program require an internet connection
-It can be launched with ```./setup.sh``` in terminal
+This program require an internet connection  
+It can be launched with ```./setup.sh``` in terminal  
+You can configure file config.conf to add your preferences (for example by not installing wireshark)
