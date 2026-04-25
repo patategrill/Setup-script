@@ -28,4 +28,5 @@ It can be launched in terminal with :
     ./setup.sh
 
 You can use this tool to automate installation for various programs according on the category you choose  
-You can configure file config.conf to add your preferences (for example by not installing wireshark)
+
+You can modify the programs to be installed according to your preferences in the .conf files without modifying the code.
