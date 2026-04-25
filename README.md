@@ -4,6 +4,7 @@
 
 ### Dev script 👨‍💻: 
 - Chromium 🌐
+- Git 🟠
 - Vscode (and extension)
 - Python3 🐍
 - NodeJS 🟢
@@ -13,6 +14,8 @@
 - Ghidra 🐉
 - Wordlist 📙
 - Wireshark 🦈
+- SqlMap 
+- Nmap
 
 This program require an internet connection  
 It can be launched in terminal with :
