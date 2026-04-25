@@ -16,4 +16,5 @@
 
 This program require an internet connection  
 It can be launched with ```./setup.sh``` in terminal  
+You can use this tool to automate installation for various programs according on the category you choose  
 You can configure file config.conf to add your preferences (for example by not installing wireshark)
