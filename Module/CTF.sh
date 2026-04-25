@@ -28,7 +28,7 @@ then
         wget -O ghidra.zip https://github.com/NationalSecurityAgency/ghidra/releases/latest/download/ghidra.zip &> /dev/null;
         unzip ghidra.zip -d ghidra
         rm ghidra.zip
-        sudo apt install default-jdk &> /dev/null;
+        sudo apt install -y default-jdk &> /dev/null;
         echo "./ghidra/ghidraRun" > run-ghidra.sh
     fi
 fi
@@ -38,7 +38,7 @@ fi
 if [[ "$install_wordlist" == true ]];
 then
     echo "Installing wordlist (rockyou)..."
-    git clone https://github.com/RykerWilder/rockyou.txt.git
+    git clone https://github.com/RykerWilder/rockyou.txt.git &> /dev/null
 fi
 
 if [[ "$install_wireshark" == true ]];
