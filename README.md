@@ -2,14 +2,14 @@
 
 ## Programs </> : 
 
-### Dev script 👨‍💻: 
+### Dev script : 
 - Chromium 🌐
 - Git 🟠
 - Vscode (and extension)
 - Python3 🐍
 - NodeJS 🟢
 
-### CTF script 🐱‍💻:
+### CTF script :
 - Chromium 🌐
 - Ghidra 🐉
 - Wordlist 📙
