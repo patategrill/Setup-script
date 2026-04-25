@@ -1,5 +1,5 @@
 #!/bin/bash
-source config.conf
+source ../Config/configDev.conf
 
 echo "Updating systeme..."
 sudo apt update &> /dev/null
@@ -45,6 +45,7 @@ then
             code --install-extension formulahendry.code-runner
         fi
     fi
+    echo "Vscode and extension installation successful"
 fi
 
 #python3
@@ -67,6 +68,7 @@ then
             echo "Installation cancelled"
         fi
     fi
+    echo "Python3 installation successful"
 fi
 
 #NodeJS
@@ -91,6 +93,7 @@ then
         fi
     fi
 
+    echo "NodeJS installation successful"
 fi
 
 if [[ "$install_git" == true ]]; then
@@ -101,4 +104,5 @@ if [[ "$install_git" == true ]]; then
         echo "Installing Git..."
         sudo apt install -y git
     fi
+    echo "Git installation successful"
 fi
