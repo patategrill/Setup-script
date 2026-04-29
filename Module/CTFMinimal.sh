@@ -1,4 +1,8 @@
 #!/bin/bash
+source ../Config/configOfficeSoftware.conf
+
+echo "Updating systeme..."
+sudo apt update &> /dev/null
 
 #Ghidra
 if [[ "$install_ghidra" == true ]];
