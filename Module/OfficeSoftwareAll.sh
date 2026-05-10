@@ -1,9 +1,6 @@
 #!/bin/bash
 source ../Config/configOfficeSoftware.conf
 
-echo "Updating systeme..."
-sudo apt update &> /dev/null
-
 #chromium
 if [[ "$install_chromium" == true ]];
 then
@@ -12,7 +9,7 @@ then
         echo "Chromium is already install"
     else
         echo "Installing Chromium..."
-        sudo apt install -y chromium &> /dev/null
+        sudo $distro install -y chromium &> /dev/null
     fi
 fi
 
@@ -23,7 +20,7 @@ if [[ "$install_LibreOffice" == true ]]; then
         echo "libreOffice is already install"
     else
         echo "Installing LibreOffice..."
-        sudo apt install -y libreoffice
+        sudo $distro install -y libreoffice
     fi
     echo "LibreOffice installation successful"
 fi
