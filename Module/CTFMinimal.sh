@@ -1,8 +1,6 @@
 #!/bin/bash
 source ../Config/configOfficeSoftware.conf
 
-echo "Updating systeme..."
-sudo apt update &> /dev/null
 
 #Ghidra
 if [[ "$install_ghidra" == true ]];
@@ -15,7 +13,7 @@ then
         wget -O ghidra.zip https://github.com/NationalSecurityAgency/ghidra/releases/latest/download/ghidra.zip &> /dev/null;
         unzip ghidra.zip -d ghidra
         rm ghidra.zip
-        sudo apt install default-jdk &> /dev/null;
+        sudo $distro install default-jdk &> /dev/null;
         echo "./ghidra/ghidraRun" > run-ghidra.sh
     fi
 fi
@@ -35,7 +33,7 @@ then
         echo "Wireshark is already install"
     else
         echo "Installing Wireshark..."
-        sudo apt install -y wireshark &> /dev/null
+        sudo $distro install -y wireshark &> /dev/null
     fi
     echo "Wireshark installation successful"
 fi
@@ -61,7 +59,7 @@ if [[ "$install_nmap" == true ]]; then
         echo "Nmap is already install"
     else
         echo "Installing Nmap..."
-        sudo apt install nmap &> /dev/null
+        sudo $distro install -y nmap &> /dev/null
     fi
     echo "Nmap installation successful"
 fi
