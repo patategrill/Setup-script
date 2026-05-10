@@ -1,9 +1,6 @@
 #!/bin/bash
 source ../Config/configDev.conf
 
-echo "Updating systeme..."
-sudo apt update &> /dev/null
-
 #chromium
 if [[ "$install_chromium" == true ]];
 then
@@ -12,7 +9,7 @@ then
         echo "Chromium is already install"
     else
         echo "Installing Chromium..."
-        sudo apt install -y chromium &> /dev/null
+        sudo $distro install -y chromium &> /dev/null
     fi
 fi
 
@@ -102,7 +99,7 @@ if [[ "$install_git" == true ]]; then
         echo "Git is already install"
     else
         echo "Installing Git..."
-        sudo apt install -y git
+        sudo $distro install -y git
     fi
     echo "Git installation successful"
 fi
