@@ -25,6 +25,20 @@
 #### This tool will be improved shortly 🙏  
 
 This program require an internet connection  
+### You must update your systeme before installation with the command :  
+On Debian, Ubuntu, Mint, Pop!_OS :
+
+    sudo apt update
+
+On Arch, Manjaro, EndeavourOS :
+
+    sudo pacman -Syu
+
+On Fedora : 
+
+    sudo dnf upgrade -y
+
+
 It can be launched in terminal with :
 
     ./setup.sh
