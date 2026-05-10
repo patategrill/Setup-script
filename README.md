@@ -22,7 +22,7 @@
 - LibreOffice 
 - Obsidian 🟣
 
-### This tool is available on Debian, Ubuntu, Mint, Pop!_OS, Fedora  
+#### This tool is available on Debian, Ubuntu, Mint, Pop!_OS, Fedora  
 
 This program require an internet connection  
 ### You must update your systeme before installation with the command :  
