@@ -1,32 +1,31 @@
 #!/bin/bash
-source ../Config/configCTF.conf
+source ../Config/configOfficeSoftware.conf
 
-
-#chromium
-if [[ "$install_chromium" == true ]];
+#Spotify
+if [[ "$install_spotify" == true ]];
 then
-    if command -v chromium &> /dev/null;
+    if command -v spotify &> /dev/null;
     then
-        echo "Chromium is already install"
+        echo "Spotify is already install"
     else
-        echo "Installing Chromium..."
-        sudo $distro install -y chromium &> /dev/null
+        echo "Installing Spotify..."
+        if command -v flatpak &> /dev/null;
+        then
+            flatpak install -y flathub com.spotify.Client &> /dev/null
+        else
+            echo "Flatpak is not installed. Do you want to install it ? (y/n)"
+            read -r answer
+            if [[ "$answer" == "y" ]]; then
+                sudo $distro install -y flatpak &> /dev/null
+                flatpak install -y flathub com.spotify.Client &> /dev/null
+                sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &> /dev/null
+            else
+                echo "Spotify installation skipped."
+            fi
+        fi
     fi
+    echo "Spotify installation successful"
 fi
-
-
-#Git
-if [[ "$install_git" == true ]]; then
-    
-    if command -v git &> /dev/null; then
-        echo "Git is already install"
-    else
-        echo "Installing Git..."
-        sudo $distro install -y git &> /dev/null
-    fi
-    echo "Git installation successful"
-fi
-
 
 #Ghidra
 if [[ "$install_ghidra" == true ]];
