@@ -2,14 +2,16 @@
 
 ## Programs </> : 
 
-### Dev script : 
+### Dev script :  
+- Spotify 🟢ᯤ
 - Chromium 🌐
 - Git 🟠
 - Vscode (and extension)
 - Python3 🐍
 - NodeJS 🟢
 
-### CTF script :
+### CTF script :  
+- Spotify 🟢ᯤ
 - Chromium 🌐
 - Ghidra 🐉
 - Wordlist 📙
@@ -18,6 +20,7 @@
 - Nmap
 
 ### Office Software script :  
+- Spotify 🟢ᯤ
 - Chromium 🌐
 - LibreOffice 
 - Obsidian 🟣
