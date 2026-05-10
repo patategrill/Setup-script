@@ -14,10 +14,14 @@ then
     read choice2
     if [[ "$choice2" == "1" ]];
     then
+        read -p "What is your linux distribution ? (Ubuntu, Debian, Mint, Pop!_OS, Arch, Manjaro, EndeavourOS, Fedora, openSUSE, alpineLinux) " distro 
+        sed -i "s/distro=\"\"/distro=\"$distro\"/g" config/configDev.conf
         echo "Installing Minimal Dev configuration..."
         source Module/DevMinimal.sh
     elif [[ "$choice2" == "2" ]];
     then
+        read -p "What is your linux distribution ? (Ubuntu, Debian, Mint, Pop!_OS, Arch, Manjaro, EndeavourOS, Fedora, openSUSE, alpineLinux) " distro 
+        sed -i "s/distro=\"\"/distro=\"$distro\"/g" config/configDev.conf
         echo "Installing All Dev configuration..."
         source Module/DevAll.sh
     else
@@ -31,10 +35,14 @@ then
     read choice2  
     if [[ "$choice2" = "1" ]];
     then  
+        read -p "What is your linux distribution ? (Ubuntu, Debian, Mint, Pop!_OS, Arch, Manjaro, EndeavourOS, Fedora, openSUSE, alpineLinux) " distro 
+        sed -i "s/distro=\"\"/distro=\"$distro\"/g" config/configCTF.conf
         echo "Installing Minimal CTF configuration..."
         source Module/CTFMinimal.sh
     elif [[ "$choice2" == "2" ]];
     then
+        read -p "What is your linux distribution ? (Ubuntu, Debian, Mint, Pop!_OS, Arch, Manjaro, EndeavourOS, Fedora, openSUSE, alpineLinux) " distro 
+        sed -i "s/distro=\"\"/distro=\"$distro\"/g" config/configCTF.conf
         echo "Installing All CTF configuration..."
         source Module/CTFAll.sh
     else
@@ -48,10 +56,14 @@ then
     read choice2
     if [[ "$choice2" == "1" ]];
     then
+        read -p "What is your linux distribution ? (Ubuntu, Debian, Mint, Pop!_OS, Arch, Manjaro, EndeavourOS, Fedora, openSUSE, alpineLinux) " distro 
+        sed -i "s/distro=\"\"/distro=\"$distro\"/g" config/configOffice.conf
         echo "Installing Minimal Office Software configuration..."
         source Module/OfficeSoftwareMinimal.sh
     elif [[ "$choice2" == "2" ]];
     then
+        read -p "What is your linux distribution ? (Ubuntu, Debian, Mint, Pop!_OS, Arch, Manjaro, EndeavourOS, Fedora, openSUSE, alpineLinux) " distro 
+        sed -i "s/distro=\"\"/distro=\"$distro\"/g" config/configOffice.conf
         echo "Installing All Office Software configuration..."
         source Module/OfficeSoftwareAll.sh
     else
