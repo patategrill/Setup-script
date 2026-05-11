@@ -48,3 +48,5 @@ You can use this tool to automate installation for various programs according on
 You have 2 mode by configuration : Minimal and All, Minimal config provide you with the minimum necessary equipment to work in good conditions and the All config install all the tools you need to work in good conditions
 
 You can modify the programs to be installed according to your preferences in the .conf files without modifying the code.
+In the `.conf` file you must respect this syntax : `variable=`  
+It's essential that the characters are joined together.
