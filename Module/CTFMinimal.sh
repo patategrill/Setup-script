@@ -19,6 +19,8 @@ then
                 sudo $distro install -y flatpak &> /dev/null
                 flatpak install -y flathub com.spotify.Client &> /dev/null
                 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &> /dev/null
+                echo 'alias spotify="flatpak run com.spotify.Client"' >> ~/.bashrc
+                source ~/.bashrc
             else
                 echo "Spotify installation skipped."
             fi
